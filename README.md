@@ -1,5 +1,5 @@
 # Nlog vs Serilog with BenchmarkDotNet
-This project benchmark Nlog and Serilog in a simple batch project.
+This project benchmark Nlog and Serilog in a simple batch project in .Net6.
 
 My goal is to find the best option for my program and also to provide you with an example for your own performance testing
 with Serilog/Nlog or others.
