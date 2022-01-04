@@ -1,5 +1,4 @@
 ﻿using BenchmarkDotNet.Attributes;
-using NLog;
 
 namespace Benchmark.Benchmarks;
 
@@ -20,9 +19,6 @@ public class BenchmarkCases
     [GlobalCleanup]
     public void Cleanup()
     {
-        //LogManager.Shutdown();
-        //NLog.LogManager.Configuration = null;
-
         Directory.Delete(PATH, true);
     }
 
