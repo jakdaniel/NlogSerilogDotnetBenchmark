@@ -44,7 +44,9 @@ namespace NlogProvider
             var fileTarget = new FileTarget(fileName)
             {
                 FileName = fileName,
-                Layout = GetLayout()
+                KeepFileOpen = true,
+                ConcurrentWrites = false,
+                Layout = GetLayout(),
             };
 
             var config = new LoggingConfiguration();
@@ -58,7 +60,9 @@ namespace NlogProvider
             var fileTarget = new FileTarget(fileName)
             {
                 FileName = fileName,
-                Layout = GetLayout()
+                KeepFileOpen = true,
+                ConcurrentWrites = false,
+                Layout = GetLayout(),
             };
 
 
