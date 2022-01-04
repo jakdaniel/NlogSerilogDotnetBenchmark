@@ -38,9 +38,7 @@ namespace SerilogProvider
             host.UseSerilog((context, logger) =>
             {
                 logger.Enrich.FromLogContext();
-                logger.WriteTo.File(fileName,
-                    outputTemplate: GetOutputTemplate()
-                    );
+                logger.WriteTo.File(fileName, outputTemplate: GetOutputTemplate());
             });
 
             return host;
@@ -52,9 +50,9 @@ namespace SerilogProvider
             host.UseSerilog((context, logger) =>
             {
                 logger.Enrich.FromLogContext();
-                logger.WriteTo.Async(a => a.File(fileName,
-                    outputTemplate: GetOutputTemplate()
-                    ));
+                logger.WriteTo.Async(a => 
+                    a.File(fileName, outputTemplate: GetOutputTemplate()), 
+                    blockWhenFull: true);
             });
 
             return host;
