@@ -23,7 +23,7 @@ namespace Logger
                     {
                         _logger.LogInformation("Begin loop : {i}", i);
 
-                        Thread.Sleep(100);
+                        //Thread.Sleep(100);
 
                         _logger.LogInformation("End loop : {i}", i);
                     }

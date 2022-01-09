@@ -33,9 +33,9 @@ namespace NlogProvider
                  logging.ClearProviders();
                  logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Debug);
                  if (isAsync)
-                     SetupLoggerAsync(Path.Combine(path, "NlogAsync.log"));
+                     SetupLoggerAsync(path);
                  else
-                     SetupLogger(Path.Combine(path, "Nlog.log"));
+                     SetupLogger(path);
              })
              .UseNLog();
 
