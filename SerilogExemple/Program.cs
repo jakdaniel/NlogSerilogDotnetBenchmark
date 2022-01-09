@@ -25,9 +25,9 @@ namespace SerilogProvider
               });
 
             if (isAsync)
-                host.UseSerilogForBenchmarkAsync(Path.Combine(path, "SerilogAsync.log"));
+                host.UseSerilogForBenchmarkAsync(path);
             else
-                host.UseSerilogForBenchmark(Path.Combine(path, "Serilog.log"));
+                host.UseSerilogForBenchmark(path);
 
             return host;
         }

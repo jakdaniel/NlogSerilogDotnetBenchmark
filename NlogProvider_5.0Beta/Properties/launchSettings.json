@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LoggingExemple": {
+      "commandName": "Project",
+      "commandLineArgs": "25 true C:\\Temps\\NLogSerilogBenchmark"
+    }
+  }
+}

@@ -15,6 +15,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\NlogExemple\NlogProvider.csproj" />
+	  <ProjectReference Include="..\NlogProvider_5.0Beta\NlogProvider_5_0_Beta.csproj" />
 	  <ProjectReference Include="..\SerilogExemple\SerilogProvider.csproj" />
 	</ItemGroup>
 	
